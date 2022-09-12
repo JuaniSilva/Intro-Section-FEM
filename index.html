@@ -61,7 +61,9 @@
 	<body
 		class="font-epilogue bg-almostWhite overflow-x-hidden text-mediumGrey relative"
 	>
-		<header class="flex justify-between px-4 py-6 lg:justify-start">
+		<header
+			class="flex justify-between lg:items-center px-4 py-6 lg:justify-start"
+		>
 			<img src="./images/logo.svg" alt="snap logo svg" />
 			<nav
 				class="absolute right-0 top-0 px-4 py-6 h-full w-[64%] bg-almostWhite flex flex-col translate-x-[100%] transition-all duration-500 lg:static lg:translate-x-0 lg:flex-row lg:justify-between lg:w-auto lg:px-0 lg:py-0 lg:bg-transparent lg:shadow-none lg:w-full"
@@ -83,7 +85,7 @@
 							<img
 								src="./images/icon-arrow-down.svg"
 								class="group-hover:rotate-180 transition-all"
-								alt=""
+								alt="#"
 							/>
 						</span>
 						<ul
@@ -94,7 +96,7 @@
 							>
 								<img src="images/icon-todo.svg" alt="" />
 								<a
-									href=""
+									href="#"
 									class="hover:text-almostBlack transition-all w-max"
 									>Todo List</a
 								>
@@ -104,7 +106,7 @@
 							>
 								<img src="images/icon-calendar.svg" alt="" />
 								<a
-									href=""
+									href="#"
 									class="hover:text-almostBlack transition-all"
 									>Calendar</a
 								>
@@ -114,7 +116,7 @@
 							>
 								<img src="images/icon-reminders.svg" alt="" />
 								<a
-									href=""
+									href="#"
 									class="hover:text-almostBlack transition-all"
 									>Reminder</a
 								>
@@ -124,7 +126,7 @@
 							>
 								<img src="images/icon-planning.svg" alt="" />
 								<a
-									href=""
+									href="#"
 									class="hover:text-almostBlack transition-all"
 									>Planning</a
 								>
@@ -180,12 +182,16 @@
 						</ul>
 					</li>
 					<li class="inline-block">
-						<a href="" class="hover:text-almostBlack transition-all"
+						<a
+							href="#"
+							class="hover:text-almostBlack transition-all"
 							>Carrers</a
 						>
 					</li>
 					<li class="inline-block">
-						<a class="hover:text-almostBlack transition-all" href=""
+						<a
+							class="hover:text-almostBlack transition-all"
+							href="#"
 							>About</a
 						>
 					</li>
@@ -194,11 +200,13 @@
 					class="flex flex-col w-full gap-8 mt-8 lg:flex-row lg:mt-0 lg:w-auto"
 				>
 					<a
+						href="#"
 						class="py-3 rounded-2xl text-center hover:text-almostBlack transition-all cursor-pointer"
 					>
 						Login
 					</a>
 					<a
+						href="#"
 						class="py-3 border rounded-2xl text-center hover:border-almostBlack hover:text-almostBlack transition-all cursor-pointer lg:py-2 lg:px-4 lg:flex lg:items-center"
 						>Register</a
 					>
@@ -207,7 +215,7 @@
 			<button class="lg:hidden">
 				<img
 					src="./images/icon-menu.svg"
-					alt="manu button"
+					alt="menu button"
 					id="menu-btn"
 				/>
 			</button>
@@ -244,29 +252,29 @@
 					<img
 						src="./images/client-databiz.svg"
 						class="h-5 max-w-[86px] lg:max-w-full lg:h-8"
-						alt=""
+						alt="data biz logo"
 					/>
 					<img
 						src="./images/client-audiophile.svg"
 						class="h-5 max-w-[86px] lg:max-w-full lg:h-8"
-						alt=""
+						alt="audio phile logo"
 					/>
 					<img
 						src="./images/client-meet.svg"
 						class="h-5 max-w-[86px] lg:max-w-full lg:h-8"
-						alt=""
+						alt="meet logo"
 					/>
 					<img
 						src="./images/client-maker.svg"
 						class="h-5 max-w-[86px] lg:max-w-full lg:h-8"
-						alt=""
+						alt="maker logo"
 					/>
 				</div>
 			</div>
 			<img
 				src="./images/image-hero-desktop.png"
-				alt=""
-				class="lg:order-2 lg:max-w-[480px] hidden"
+				alt="Snap hero image, a guy holding a pc"
+				class="lg:order-2 lg:max-w-[480px] lg:block hidden"
 			/>
 		</main>
 		<div class="attribution mt-5">
@@ -275,7 +283,10 @@
 				href="https://www.frontendmentor.io?ref=challenge"
 				target="_blank"
 				>Frontend Mentor</a
-			>. Coded by <a href="#">Your Name Here</a>.
+			>. Coded by
+			<a href="https://github.com/JuaniSilva" target="_blank"
+				>Juan Cruz Silva</a
+			>.
 		</div>
 	</body>
 </html>
