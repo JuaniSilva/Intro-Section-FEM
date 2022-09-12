@@ -58,18 +58,24 @@
 			}
 		</style>
 	</head>
-	<body class="font-epilogue bg-almostWhite text-mediumGrey relative">
-		<header class="flex justify-between px-4 py-6">
+	<body
+		class="font-epilogue bg-almostWhite overflow-x-hidden text-mediumGrey relative"
+	>
+		<header class="flex justify-between px-4 py-6 lg:justify-start">
 			<img src="./images/logo.svg" alt="snap logo svg" />
 			<nav
-				class="absolute right-0 top-0 px-4 py-6 h-full w-[64%] bg-almostWhite flex flex-col translate-x-[100%] transition-all duration-500"
+				class="absolute right-0 top-0 px-4 py-6 h-full w-[64%] bg-almostWhite flex flex-col translate-x-[100%] transition-all duration-500 lg:static lg:translate-x-0 lg:flex-row lg:justify-between lg:w-auto lg:px-0 lg:py-0 lg:bg-transparent lg:shadow-none lg:w-full"
 				id="nav-menu"
 			>
-				<button class="w-6 self-end" id="close-menu-btn">
+				<button class="w-6 self-end lg:hidden" id="close-menu-btn">
 					<img src="./images//icon-close-menu.svg" alt="" />
 				</button>
-				<ul class="flex flex-col gap-8 mt-10">
-					<li class="cursor-pointer group flex flex-col w-min">
+				<ul
+					class="flex flex-col gap-8 mt-10 lg:flex-row lg:flex-start lg:mt-0 lg:mr-auto lg:gap-20 lg:items-center lg:ml-20"
+				>
+					<li
+						class="cursor-pointer group flex flex-col relative lg:h-full lg:justify-center"
+					>
 						<span
 							class="inline-flex items-center gap-4 hover:text-almostBlack transition-all"
 						>
@@ -81,10 +87,10 @@
 							/>
 						</span>
 						<ul
-							class="group-hover:opacity-100 pl-6 group-hover:mt-8 group-hover:mb-4 group-hover:h-auto w-full opacity-0 flex h-0 flex-col gap-4 w-[200px] ease-in-out duration-300"
+							class="group-hover:opacity-100 group-hover:mt-8 group-hover:mb-4 group-hover:visible pl-6 w-full opacity-0 flex invisible flex-col gap-4 w-[200px] ease-in-out duration-300 lg:absolute lg:top-2 lg:-left-24 bg-almostWhite lg:shadow-xl lg:rounded-lg lg:mt-0 lg:mb-0 lg:py-4 lg:px-6"
 						>
 							<li
-								class="group-hover:flex hidden items-center gap-4"
+								class="lg:group-hover:visible lg:invisible group-hover:flex hidden items-center gap-4"
 							>
 								<img src="images/icon-todo.svg" alt="" />
 								<a
@@ -94,7 +100,7 @@
 								>
 							</li>
 							<li
-								class="group-hover:flex hidden items-center gap-4"
+								class="lg:group-hover:visible lg:invisible group-hover:flex hidden items-center gap-4"
 							>
 								<img src="images/icon-calendar.svg" alt="" />
 								<a
@@ -104,7 +110,7 @@
 								>
 							</li>
 							<li
-								class="group-hover:flex hidden items-center gap-4"
+								class="lg:group-hover:visible lg:invisible group-hover:flex hidden items-center gap-4"
 							>
 								<img src="images/icon-reminders.svg" alt="" />
 								<a
@@ -114,7 +120,7 @@
 								>
 							</li>
 							<li
-								class="group-hover:flex hidden items-center gap-4"
+								class="lg:group-hover:visible lg:invisible group-hover:flex hidden items-center gap-4"
 							>
 								<img src="images/icon-planning.svg" alt="" />
 								<a
@@ -125,19 +131,25 @@
 							</li>
 						</ul>
 					</li>
-					<li class="cursor-pointer group flex flex-col w-min">
+					<li
+						class="cursor-pointer group flex flex-col relative lg:h-full lg:justify-center"
+					>
 						<span
 							class="inline-flex items-center gap-4 hover:text-almostBlack transition-all"
 						>
 							Company
-							<img src="./images/icon-arrow-down.svg" alt="" />
+							<img
+								src="./images/icon-arrow-down.svg"
+								class="group-hover:rotate-180 transition-all"
+								alt=""
+							/>
 						</span>
 
 						<ul
-							class="group-hover:opacity-100 pl-6 group-hover:mt-8 group-hover:mb-4 group-hover:h-auto w-full opacity-0 flex h-0 flex-col gap-4 w-[200px] ease-in-out duration-300"
+							class="group-hover:opacity-100 group-hover:mt-8 group-hover:mb-4 group-hover:visible pl-6 w-full opacity-0 flex invisible flex-col gap-4 w-[200px] ease-in-out duration-300 lg:absolute lg:top-2 lg:-left-24 bg-almostWhite lg:shadow-xl lg:rounded-lg lg:mt-0 lg:mb-0 lg:py-4 lg:px-6"
 						>
 							<li
-								class="group-hover:flex hidden items-center gap-4"
+								class="lg:group-hover:visible lg:invisible group-hover:flex hidden items-center gap-4"
 							>
 								<a
 									href="#"
@@ -145,8 +157,9 @@
 									>History</a
 								>
 							</li>
+
 							<li
-								class="group-hover:flex hidden items-center gap-4"
+								class="lg:group-hover:visible lg:invisible group-hover:flex hidden items-center gap-4"
 							>
 								<a
 									href="#"
@@ -154,8 +167,9 @@
 									>Calendar</a
 								>
 							</li>
+
 							<li
-								class="group-hover:flex hidden items-center gap-4"
+								class="lg:group-hover:visible lg:invisible group-hover:flex hidden items-center gap-4"
 							>
 								<a
 									href="#"
@@ -176,19 +190,21 @@
 						>
 					</li>
 				</ul>
-				<div class="flex flex-col w-full gap-8 mt-8">
+				<div
+					class="flex flex-col w-full gap-8 mt-8 lg:flex-row lg:mt-0 lg:w-auto"
+				>
 					<a
 						class="py-3 rounded-2xl text-center hover:text-almostBlack transition-all cursor-pointer"
 					>
 						Login
 					</a>
 					<a
-						class="py-3 border rounded-2xl text-center hover:border-almostBlack hover:text-almostBlack transition-all cursor-pointer"
+						class="py-3 border rounded-2xl text-center hover:border-almostBlack hover:text-almostBlack transition-all cursor-pointer lg:py-2 lg:px-4 lg:flex lg:items-center"
 						>Register</a
 					>
 				</div>
 			</nav>
-			<button>
+			<button class="lg:hidden">
 				<img
 					src="./images/icon-menu.svg"
 					alt="manu button"
@@ -197,48 +213,61 @@
 			</button>
 		</header>
 
-		<main>
+		<main class="lg:flex max-w-[1140px] lg:m-auto">
 			<img
 				src="./images/image-hero-mobile.png"
 				alt="Snap hero image, a guy holding a pc"
+				class="lg:hidden"
 			/>
-			<div class="flex items-center flex-col mt-12 gap-8 px-5">
-				<h1 class="text-3xl font-bold text-center text-almostBlack">
-					Make remote work
+			<div
+				class="flex items-center flex-col mt-12 gap-8 px-5 lg:order-1 lg:flex-grow lg:items-start lg:gap-[60px]"
+			>
+				<h1
+					class="text-3xl font-bold text-center text-almostBlack lg:text-6xl lg:text-left"
+				>
+					Make <br class="hidden lg:block" />
+					remote work
 				</h1>
 
-				<p class="text-center text-mediumGrey">
+				<p
+					class="text-center text-mediumGrey lg:text-left lg:max-w-[50ch] lg:leading-7"
+				>
 					Get your team in sync, no matter your location. Streamline
 					processes, create team rituals, and watch productivity soar.
 				</p>
 				<button
-					class="px-6 py-4 bg-almostBlack text-almostWhite rounded-2xl"
+					class="px-6 py-4 bg-almostBlack text-almostWhite rounded-2xl lg:hover:bg-almostWhite lg:hover:text-almostBlack lg:hover:border-almostBlack lg:transition-all lg:border lg:border-almostBlack"
 				>
 					Learn more
 				</button>
-				<div class="flex gap-4 flex-wrap">
+				<div class="flex gap-4 flex-wrap w-full">
 					<img
 						src="./images/client-databiz.svg"
-						class="h-5 max-w-[86px]"
+						class="h-5 max-w-[86px] lg:max-w-full lg:h-8"
 						alt=""
 					/>
 					<img
 						src="./images/client-audiophile.svg"
-						class="h-5 max-w-[86px]"
+						class="h-5 max-w-[86px] lg:max-w-full lg:h-8"
 						alt=""
 					/>
 					<img
 						src="./images/client-meet.svg"
-						class="h-5 max-w-[86px]"
+						class="h-5 max-w-[86px] lg:max-w-full lg:h-8"
 						alt=""
 					/>
 					<img
 						src="./images/client-maker.svg"
-						class="h-5 max-w-[86px]"
+						class="h-5 max-w-[86px] lg:max-w-full lg:h-8"
 						alt=""
 					/>
 				</div>
 			</div>
+			<img
+				src="./images/image-hero-desktop.png"
+				alt=""
+				class="lg:order-2 lg:max-w-[480px] hidden"
+			/>
 		</main>
 		<div class="attribution mt-5">
 			Challenge by
